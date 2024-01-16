@@ -1,0 +1,20 @@
+name: Create Tag
+
+on:
+  push:
+    branches:
+      - main  # Mettez votre branche principale ici
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Create Tag
+        run: git tag -a v0.1.0 -m "Version 0.1.0" && git push origin v0.1.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
