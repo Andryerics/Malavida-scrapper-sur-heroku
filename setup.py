@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='nom_du_module',
+    name='malavida_scraper_python',
     version='0.1.0',
     packages=find_packages(),
     install_requires=[
