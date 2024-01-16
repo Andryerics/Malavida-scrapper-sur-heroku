@@ -1,2 +1,2 @@
 include README.md
-include votremodule/*
+include malavida_scraper_python/*
